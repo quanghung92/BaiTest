@@ -1,0 +1,47 @@
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* tailwind */
+
+html {
+    font-weight: 300 !important;
+    font-size: 14px !important;
+}
+
+.ant-btn {
+
+    &.btn {
+        &:hover {
+            filter: brightness(130%);
+        }
+
+        &:disabled, &[disabled] {
+            filter: grayscale(140%) brightness(180%);
+
+            &:hover {
+                background: currentColor;
+            }
+        }
+
+        &.btn--linear {
+            background: linear-gradient(90deg, #14AEF5 0%, #2080F3 100%);
+        }
+
+        &.btn--brand {
+            background-color: #0095DA;
+        }
+
+        &.btn--brand-1 {
+             background-color: #3B4963;
+        }
+
+        &.btn--brand-2 {
+            background-color: #F43F5E;
+        }
+    }
+}
+
+.ant-input-disabled {
+    background-color: white !important;
+}
